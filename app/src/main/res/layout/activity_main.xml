@@ -19,8 +19,10 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.525"
         tools:text="Resultado" />
 
     <Button
@@ -37,42 +39,27 @@
         android:id="@+id/TVJugador1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="68dp"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/TVJugador2"
-        app:layout_constraintEnd_toEndOf="@+id/textView7"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BTirar"
         tools:text="Jugador1" />
 
     <TextView
         android:id="@+id/TVJugador2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="96dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="64dp"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/TVJugador1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/TVJugador1"
-        tools:text="Jugador2" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PUNTUACIÓN:"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/TVJugador1"
-        app:layout_constraintEnd_toEndOf="@+id/BTirar"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/BTirar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BTirar"
-        app:layout_constraintVertical_bias="0.31" />
+        tools:text="Jugador2" />
 
     <ImageView
         android:id="@+id/IDice1"
