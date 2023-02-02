@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/TVResultado"
+        android:layout_width="0dp"
+        android:layout_height="91dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Resultado" />
+
+    <Button
+        android:id="@+id/BTirar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#333333"
+        android:text="Tirar"
+        app:layout_constraintEnd_toEndOf="@+id/TVResultado"
+        app:layout_constraintStart_toStartOf="@+id/TVResultado"
+        app:layout_constraintTop_toBottomOf="@+id/TVResultado" />
+
+    <TextView
+        android:id="@+id/TVJugador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/TVJugador2"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        tools:text="Jugador1" />
+
+    <TextView
+        android:id="@+id/TVJugador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TVJugador1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TVJugador1"
+        tools:text="Jugador2" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PUNTUACIÓN:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TVJugador1"
+        app:layout_constraintEnd_toEndOf="@+id/BTirar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/BTirar"
+        app:layout_constraintTop_toBottomOf="@+id/BTirar"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <ImageView
+        android:id="@+id/IDice1"
+        android:layout_width="110dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/IDice2"
+        android:layout_width="110dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IDice1"
+        app:srcCompat="@drawable/dice5" />
+
+    <ImageView
+        android:id="@+id/IDice3"
+        android:layout_width="110dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:srcCompat="@drawable/dice4" />
+
+    <ImageView
+        android:id="@+id/IDice4"
+        android:layout_width="110dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IDice3"
+        app:srcCompat="@drawable/dice6" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="127dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/IDice1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="127dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
