@@ -1,10 +1,5 @@
 # SixthDice
-Dice Roll game in Java and Android Studio using POO.
-
-# Sixth-Dice
-Dice Roll game
-
- A simple game, which uses two six-sided dice for each player (2 players).
+It's a Dice Roll game made in Java and Android Studio using POO, which uses two six-sided dice for each player (2 players).
 
 # Rules:
 
