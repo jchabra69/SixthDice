@@ -35,32 +35,6 @@
         app:layout_constraintStart_toStartOf="@+id/TVResultado"
         app:layout_constraintTop_toBottomOf="@+id/TVResultado" />
 
-    <TextView
-        android:id="@+id/TVJugador1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="68dp"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/BTirar"
-        tools:text="Jugador1" />
-
-    <TextView
-        android:id="@+id/TVJugador2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="64dp"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BTirar"
-        tools:text="Jugador2" />
-
     <ImageView
         android:id="@+id/IDice1"
         android:layout_width="110dp"
@@ -109,7 +83,7 @@
         android:layout_marginBottom="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Nombre"
+        android:text="Nombre J1"
         app:layout_constraintBottom_toTopOf="@+id/IDice1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -123,8 +97,56 @@
         android:layout_marginEnd="52dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Nombre"
+        android:text="Nombre J2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVJugador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BTirar"
+        tools:text="PuntosJugador1" />
+
+    <TextView
+        android:id="@+id/TJugador1Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="24dp"
+        android:text="Puntos J1:"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/TVJugador1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TJugador1Info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="24dp"
+        android:text="Puntos J2:"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/TVJugador2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/TVJugador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="44dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTirar"
+        tools:text="PuntosJugador2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
