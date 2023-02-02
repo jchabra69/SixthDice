@@ -1,7 +1,7 @@
 # SixthDice
 It's a Dice Roll game made in Java and Android Studio using POO, which uses two six-sided dice for each player (2 players). 
 
-(PS: Forgive me if you find the code in Spanish, I'm learning)
+
 
 # Rules:
 
@@ -10,4 +10,4 @@ It's a Dice Roll game made in Java and Android Studio using POO, which uses two 
 + If both players have rolled a six and the same total sum of the two dice in each player, it is a tie.
 
 
-
++ (PS: Forgive me if you find the code in Spanish, I'm learning)
